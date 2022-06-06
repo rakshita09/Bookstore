@@ -873,8 +873,8 @@ nav .profile-details i{
 	<div class="sidebar">
 		<div class="logo-details">
 			<!--<i class='bx bxl-c-plus-plus'></i>-->
-			<img src="./img/book_icon.png" />&nbsp;&nbsp;
-			<span class="logo_name">Book Store</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+				class="logo_name">Book Store</span>
 		</div>
 		<ul class="nav-links">
 			<li>
@@ -887,38 +887,9 @@ nav .profile-details i{
 			
 			
 			
-			<!--ADD A BOOK-->
-			<li>
-				<a href="#addBook" title="Books">
-					<i class='bx bx-box'></i>
-					<span class="links_name">Add Book</span>
-				</a>
-			</li>
-			<!--UPDATE BOOK-->
-			<li>
-				<a href="#updateBook" title="Order list">
-					<i class='bx bx-list-ul'></i>
-					<span class="links_name">Update Book</span>
-				</a>
-			</li>
-
-			<!--SEARCH A BOOK-->
-			<li>
-				<a href="#searchBook" title="Contact">
-					<i class='bx bx-message'></i>
-					<span class="links_name">Search a Book</span>
-				</a>
-			</li>
-			<!--REMOVE A BOOK-->
-			<li>
-				<a href="#removeBook" title="Total Order">
-					<i class='bx bx-book-alt'></i>
-					<span class="links_name">Remove Book</span>
-				</a>
-			</li>
 			<!--LOGOUT-->
 			<li class="log_out">
-				<a href="admin.html" title="Logout">
+				<a th:href="@{'/'}" title="Logout">
 					<i class='bx bx-log-out'></i>
 					<span class="links_name">Log Out</span>
 				</a>
@@ -939,8 +910,7 @@ nav .profile-details i{
 			</div>
 			<div class="profile-details">
 				<span
-					style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-						th:text="'Hello, ' + ${admin.adminname}" /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					style="font-size:20px; font-weight: bold; text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello,admin</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<i class="fas fa-user"></i>
 
 			</div>
